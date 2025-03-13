@@ -3,7 +3,7 @@
 import { CartProvider } from "../context/CartContext";
 import { WishlistProvider } from "@/context/WishlistContext";
 import Navbar from "../components/Navbar";
-import Footer from "../components/footer";
+import Footer from "../components/footer"; // Ensure case matches file system
 import { useEffect, useState } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -28,6 +28,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </CartProvider>
         </WishlistProvider>
       </body>
-    </html>
-  );
+    </html> 
+  );
 }
